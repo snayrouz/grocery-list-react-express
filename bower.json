@@ -1,0 +1,17 @@
+{
+  "name": "grocery-list-react-express",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "snayrouz <samuel.nayrouz@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/snayrouz/grocery-list-react-express",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

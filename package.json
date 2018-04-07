@@ -1,0 +1,19 @@
+{
+  "name": "grocery-list-react-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snayrouz/grocery-list-react-express.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snayrouz/grocery-list-react-express/issues"
+  },
+  "homepage": "https://github.com/snayrouz/grocery-list-react-express#readme"
+}
