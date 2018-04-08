@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/snayrouz/grocery-list-react-express#readme",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "browser-sync": "^2.23.6",
     "browserify": "^16.1.1",
     "create-react-class": "^15.6.3",
@@ -27,6 +28,7 @@
     "guid": "0.0.12",
     "gulp": "^3.9.1",
     "gulp-live-server": "0.0.31",
+    "jquery": "^3.3.1",
     "react": "^16.3.1",
     "react-addons-test-utils": "^15.6.2",
     "react-dom": "^16.3.1",
