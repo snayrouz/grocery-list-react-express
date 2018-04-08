@@ -3,8 +3,8 @@ var listeners = {};
 
 module.exports = {
   register:function(cb){
-    var id = guide.raw();
-    listeners[id] = callback;
+    var id = guid.raw();
+    listeners[id] = cb;
     return id;
   },
   dispatch:function(payload){

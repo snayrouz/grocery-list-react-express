@@ -1,15 +1,16 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 var GroceryItemList = require('./components/GroceryItemList.jsx');
+var groceryItemStore = require('./stores/GroceryItemStore.jsx')
+var initial = groceryItemStore.getItems();
 
-var initial = [{
-  name: "Ben N Jerry's Phish Food"
-}, {
-  name: "Greek Yogurt"
-}, {
-  name: "Reese's",
-  puchased:true
-}, {
-  name: "Bananas"
-}];
-ReactDOM.render(<GroceryItemList items={initial} />,app)
+function render(){
+  ReactDOM.render(<GroceryItemList items={initial} />,app)
+}
+
+groceryItemStore.onChange(function(items){
+  initial = items;
+  render();
+})
+
+render();
