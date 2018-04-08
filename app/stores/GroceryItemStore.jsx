@@ -1,7 +1,18 @@
 var dispatcher = require('./../dispatcher.js');
 
 function GroceryItemStore(){
-  var items = [];
+  //var items = [];
+  var items = [{
+    name: "Ben N Jerry's Phish Food"
+  }, {
+    name: "Greek Yogurt"
+  }, {
+    name: "Reese's",
+    puchased:true
+  }, {
+    name: "Bananas"
+  }];
+
   var listeners = [];
 
   function getItems(){
@@ -18,13 +29,13 @@ function GroceryItemStore(){
   }
 
   function triggerListeners(){
-    changeListeners.forEach(function(listener){
-      listener(groceryItems);
+    listeners.forEach(function(listener){
+      listener(items);
     })
   };
 
   dispatcher.register(function(event){
-    var split = even.type.split(':');
+    var split = event.type.split(':');
     if (split[0]==='grocery-item'){
       switch(split[1]){
         case "add":
@@ -38,7 +49,7 @@ function GroceryItemStore(){
     getItems:getItems,
     onChange:onChange
   }
-  
+
 }
 
 module.exports = new GroceryItemStore();
