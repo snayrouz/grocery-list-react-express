@@ -20,8 +20,8 @@ module.exports = createReactClass({
 
   render:function(){
     return(
-      <div>
-        <div>
+      <div className="grocery-item row">
+        <div className="six columns">
           <h4 className={this.props.item.purchased ? "strikethrough" : ""}>{this.props.item.name}</h4>
         </div>
         <form className="three columns" onSubmit={this.togglePurchased}>
